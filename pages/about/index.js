@@ -1,4 +1,5 @@
 //  data
+import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from 'react-icons/fa6'
 const aboutData = [
   {
     title: 'skills',
@@ -10,14 +11,17 @@ const aboutData = [
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          // <SiNextdotjs />,
+          // <SiFramer />,
+          // <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma />,
+          // <SiAdobexd />, <SiAdobephotoshop />
+        ],
       },
     ],
   },
@@ -68,10 +72,10 @@ const aboutData = [
       },
     ],
   },
-];
+]
 
 const About = () => {
-  return <div>About</div>;
-};
+  return <div>About</div>
+}
 
-export default About;
+export default About
