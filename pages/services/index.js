@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ServiceSlider from '../../components/ServiceSlider'
 import Bulb from '../../components/Bulb'
 import Circles from '../../components/Circles'
@@ -28,10 +29,8 @@ const Services = () => {
               exit={'hidden'}
               className="mb-4 max-w-[400px] mx-auto lg:mx-8"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              ex impedit hic asperiores, autem cumque non delectus ducimus
-              similique laborum, quod architecto praesentium labore est, aliquid
-              repellat minus cum at.
+              I love to code, collaborate and create. Need something developed
+              or just fancy a chat? Don't be a stranger and get in touch!
             </motion.p>
           </div>
           <motion.div

@@ -16,29 +16,32 @@ import 'swiper/css/pagination'
 
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Building dynamic web applications tailored to client needs.',
+  },
+  {
+    icon: <RxCrop />,
+    title: 'Mobile Apps',
+    description: 'Crafting user-centric mobile solutions using React Native.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Fullstack',
+    description:
+      'Delivering seamless integration of frontend and backend systems.',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Consultancy',
+    description:
+      'Providing expert tech guidance and best practice recommendations.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Training',
+    description:
+      'Mentoring and upskilling teams in modern development techniques.',
   },
 ]
 

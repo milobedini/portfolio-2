@@ -119,10 +119,10 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 mt-4 xl:mt-0"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Crafting code, <span className="text-accent">igniting</span> digital
+            experiences.
           </motion.h2>
           <motion.p
             variants={fadeIn('left', 0.2)}
@@ -131,9 +131,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then I've
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            Kicked off my tech journey at General Assembly and haven't looked
+            back. From teaching budding devs to crafting tailored consultant
+            solutions, I'm all in. Whether it's a complex web app or a vibrant
+            mobile interface, I've worked hand-in-hand with renowned brands and
+            driven enthusiasts alike, turning digital dreams into tangible
+            realities.
           </motion.p>
           {/* Counters */}
           <motion.div

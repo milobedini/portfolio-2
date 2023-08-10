@@ -12,40 +12,56 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
+          title: 'Sway Mobile',
           path: '/thumb1.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Sway',
           path: '/thumb2.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Yard',
           path: '/thumb3.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Whisk',
           path: '/thumb4.jpg',
+          link: '',
+          description: '',
         },
       ],
     },
     {
       images: [
         {
-          title: 'title',
+          title: 'Tastebook',
           path: '/thumb4.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Club',
           path: '/thumb1.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Feeding Frenzy',
           path: '/thumb2.jpg',
+          link: '',
+          description: '',
         },
         {
-          title: 'title',
+          title: 'Portfolio',
           path: '/thumb3.jpg',
+          link: '',
+          description: '',
         },
       ],
     },
@@ -86,11 +102,9 @@ const WorkSlider = () => {
                       group-hover:xl:-translate-y-20 transition-all duration-300"
                       >
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          {/* title 1 */}
-                          <div className="delay-100">LIVE</div>
-                          {/* title 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                          {/* title*/}
+                          <div className="delay-100 uppercase">
+                            {image.title}
                           </div>
                           {/* icon */}
                           <div
