@@ -15,7 +15,8 @@ import {
   TastebookCard,
   WhiskCard,
   YardCard,
-} from './WorkCard'
+} from './work/WorkCard'
+import { SwayMobileVisual, SwayVisual } from './work/visual'
 
 // data
 export const workSlides = {
@@ -29,6 +30,7 @@ export const workSlides = {
           description: '',
           id: 1,
           card: SwayMobileCard,
+          visual: SwayMobileVisual,
         },
         {
           title: 'Sway',
@@ -37,6 +39,7 @@ export const workSlides = {
           description: '',
           id: 2,
           card: SwayCard,
+          visual: SwayVisual,
         },
         {
           title: 'Yard',
@@ -45,6 +48,7 @@ export const workSlides = {
           description: '',
           id: 3,
           card: YardCard,
+          visual: SwayMobileVisual,
         },
         {
           title: 'Whisk',
@@ -53,6 +57,7 @@ export const workSlides = {
           description: '',
           id: 4,
           card: WhiskCard,
+          visual: SwayVisual,
         },
       ],
     },
@@ -65,6 +70,7 @@ export const workSlides = {
           description: '',
           id: 5,
           card: TastebookCard,
+          visual: SwayMobileVisual,
         },
         {
           title: 'Club',
@@ -73,6 +79,7 @@ export const workSlides = {
           description: '',
           id: 6,
           card: ClubCard,
+          visual: SwayVisual,
         },
         {
           title: 'Feeding Frenzy',
@@ -81,6 +88,7 @@ export const workSlides = {
           description: '',
           id: 7,
           card: FeedingFrenzyCard,
+          visual: SwayMobileVisual,
         },
         {
           title: 'Portfolio',
@@ -89,6 +97,7 @@ export const workSlides = {
           description: '',
           id: 8,
           card: PortfolioCard,
+          visual: SwayVisual,
         },
       ],
     },

@@ -18,7 +18,7 @@ const WorkTitle = ({ children, id }) => {
     <p
       ref={ref}
       className={classNames(
-        'text-5xl py-16 transition-colors',
+        'work-title text-5xl py-16 transition-colors',
         isInView ? 'text-accent' : 'text-white'
       )}
     >

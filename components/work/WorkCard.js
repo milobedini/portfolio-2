@@ -2,10 +2,10 @@
 import classNames from 'classnames'
 import React from 'react'
 import { useWorkStore } from './store'
-import Image from 'next/image'
 
 const WorkCard = ({ gradient, children, id }) => {
   const inViewWork = useWorkStore((state) => state.inViewWork)
+  const setFullscreenWork = useWorkStore((state) => state.setFullscreenWork)
 
   return (
     <div
@@ -16,7 +16,10 @@ const WorkCard = ({ gradient, children, id }) => {
       )}
     >
       {children}
-      <button className="bg-primary text-white rounded-xl absolute bottom-6 left-6 px-4 py-2 shadow-lg">
+      <button
+        className="bg-primary text-white rounded-xl absolute bottom-6 left-6 px-4 py-2 shadow-lg"
+        onClick={() => setFullscreenWork(id)}
+      >
         Show me
       </button>
     </div>
