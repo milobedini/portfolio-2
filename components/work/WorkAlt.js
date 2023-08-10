@@ -37,6 +37,13 @@ const WorkAlt = () => {
             at: '<',
           },
         ],
+        ['.active-card .gradient', { opacity: 0, scale: 0 }, { at: '<' }],
+        ['.active-card .show-me-btn', { opacity: 0 }, { at: '<' }],
+        [
+          '.back-to-site-btn',
+          { opacity: 1, y: '0px' },
+          { at: '<', duration: 0.3 },
+        ],
       ])
     } else {
       animate([
@@ -62,9 +69,19 @@ const WorkAlt = () => {
             at: '<',
           },
         ],
+        ['.active-card .gradient', { opacity: 1, scale: 1 }, { at: '<' }],
+        [
+          '.back-to-site-btn',
+          { opacity: 0, y: '300px' },
+          { at: '<', duration: 0.3 },
+        ],
+        ['.active-card .show-me-btn', { opacity: 1 }],
       ])
     }
   }, [fullscreenWork, animate, lastFullscreenWork])
+
+  // Array from 1 to 8
+  const testArray = Array.from({ length: 8 }, (_, i) => i + 1)
 
   return (
     <div className="mx-auto max-w-6xl px-4">
@@ -93,13 +110,12 @@ const WorkAlt = () => {
         </motion.p>
       </div>
       <div ref={scope}>
-        {workSlides.slides.map((item) => {
-          return item.images.map((image) => {
-            return <image.visual key={image.id} id={image.id} />
-          })
+        {workSlides.map((item) => {
+          return <item.visual id={item.id} key={item.id} />
         })}
         <button
-          className="fixed bottom-32 left-1/2 -translate-x-1/2 z-10"
+          className="back-to-site-btn bg-black text-white px-4 py-2 rounded-full shadow-lg opacity-0
+           translate-y-[300%] fixed bottom-32 left-1/2 -translate-x-1/2 z-10"
           onClick={() => setFullscreenWork(null)}
         >
           Back to site
@@ -107,23 +123,22 @@ const WorkAlt = () => {
         <div className="flex w-full gap-20 items-start">
           <div className="w-full py-[50vh]">
             <ul>
-              {workSlides.slides.map((item) => {
-                return item.images.map((image) => {
-                  return (
-                    <li key={image.id}>
-                      <WorkTitle id={image.id}>{image.title}</WorkTitle>
-                    </li>
-                  )
-                })
+              {workSlides.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <WorkTitle id={item.id}>{item.title}</WorkTitle>
+                  </li>
+                )
               })}
             </ul>
           </div>
           <div className="w-full sticky top-0 h-screen flex items-center">
-            <div className="w-full aspect-square bg-gray-100 rounded-2xl relative">
-              {workSlides.slides.map((item) => {
-                return item.images.map((image) => {
-                  return <image.card id={image.id} key={image.id} />
-                })
+            <div
+              className="w-full aspect-square bg-gray-100 rounded-2xl relative 
+            [&:has(>_.active-card)]:bg-transparent"
+            >
+              {workSlides.map((item) => {
+                return <item.card id={item.id} key={item.id} />
               })}
             </div>
           </div>

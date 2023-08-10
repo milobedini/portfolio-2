@@ -16,93 +16,84 @@ import {
   WhiskCard,
   YardCard,
 } from './work/WorkCard'
-import { SwayMobileVisual, SwayVisual } from './work/visual'
+import { SwayMobileVisual, SwayVisual, TestVisual } from './work/visual'
 
 // data
-export const workSlides = {
-  slides: [
-    {
-      images: [
-        {
-          title: 'Sway Mobile',
-          path: '/thumb1.jpg',
-          link: '',
-          description: '',
-          id: 1,
-          card: SwayMobileCard,
-          visual: SwayMobileVisual,
-        },
-        {
-          title: 'Sway',
-          path: '/thumb2.jpg',
-          link: '',
-          description: '',
-          id: 2,
-          card: SwayCard,
-          visual: SwayVisual,
-        },
-        {
-          title: 'Yard',
-          path: '/thumb3.jpg',
-          link: '',
-          description: '',
-          id: 3,
-          card: YardCard,
-          visual: SwayMobileVisual,
-        },
-        {
-          title: 'Whisk',
-          path: '/thumb4.jpg',
-          link: '',
-          description: '',
-          id: 4,
-          card: WhiskCard,
-          visual: SwayVisual,
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'Tastebook',
-          path: '/thumb4.jpg',
-          link: '',
-          description: '',
-          id: 5,
-          card: TastebookCard,
-          visual: SwayMobileVisual,
-        },
-        {
-          title: 'Club',
-          path: '/thumb1.jpg',
-          link: '',
-          description: '',
-          id: 6,
-          card: ClubCard,
-          visual: SwayVisual,
-        },
-        {
-          title: 'Feeding Frenzy',
-          path: '/thumb2.jpg',
-          link: '',
-          description: '',
-          id: 7,
-          card: FeedingFrenzyCard,
-          visual: SwayMobileVisual,
-        },
-        {
-          title: 'Portfolio',
-          path: '/thumb3.jpg',
-          link: '',
-          description: '',
-          id: 8,
-          card: PortfolioCard,
-          visual: SwayVisual,
-        },
-      ],
-    },
-  ],
-}
+export const workSlides = [
+  {
+    title: 'Sway Mobile',
+    path: '/thumb1.jpg',
+    link: '',
+    description: '',
+    id: 1,
+    card: SwayMobileCard,
+    visual: SwayMobileVisual,
+  },
+  {
+    title: 'Sway',
+    path: '/thumb2.jpg',
+    link: '',
+    description: '',
+    id: 2,
+    card: SwayCard,
+    visual: SwayVisual,
+  },
+  {
+    title: 'Yard',
+    path: '/thumb3.jpg',
+    link: '',
+    description: '',
+    id: 3,
+    card: YardCard,
+    visual: TestVisual,
+  },
+  {
+    title: 'Whisk',
+    path: '/thumb4.jpg',
+    link: '',
+    description: '',
+    id: 4,
+    card: WhiskCard,
+    visual: SwayVisual,
+  },
+
+  {
+    title: 'Tastebook',
+    path: '/thumb4.jpg',
+    link: '',
+    description: '',
+    id: 5,
+    card: TastebookCard,
+    visual: SwayMobileVisual,
+  },
+  {
+    title: 'Club',
+    path: '/thumb1.jpg',
+    link: '',
+    description: '',
+    id: 6,
+    card: ClubCard,
+    visual: SwayVisual,
+  },
+  {
+    title: 'Feeding Frenzy',
+    path: '/thumb2.jpg',
+    link: '',
+    description: '',
+    id: 7,
+    card: FeedingFrenzyCard,
+    visual: SwayMobileVisual,
+  },
+  {
+    title: 'Portfolio',
+    path: '/thumb3.jpg',
+    link: '',
+    description: '',
+    id: 8,
+    card: PortfolioCard,
+    visual: TestVisual,
+  },
+]
 
 const WorkSlider = () => {
   return (

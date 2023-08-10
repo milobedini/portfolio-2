@@ -10,14 +10,19 @@ const WorkCard = ({ gradient, children, id }) => {
   return (
     <div
       className={classNames(
-        'bg-gradient-to-br  h-full w-full rounded-2xl absolute inset-0 transition-opacity',
-        gradient,
-        inViewWork === id ? 'opacity-100' : 'opacity-0'
+        'h-full w-full rounded-2xl absolute inset-0 transition-opacity',
+        inViewWork === id ? 'active-card opacity-100' : 'opacity-0'
       )}
     >
+      <div
+        className={classNames(
+          'gradient absolute inset-0 bg-gradient-to-br origin-bottom-left rounded-2xl',
+          gradient
+        )}
+      ></div>
       {children}
       <button
-        className="bg-primary text-white rounded-xl absolute bottom-6 left-6 px-4 py-2 shadow-lg"
+        className="show-me-btn bg-primary text-white rounded-xl absolute bottom-6 left-6 px-4 py-2 shadow-lg"
         onClick={() => setFullscreenWork(id)}
       >
         Show me

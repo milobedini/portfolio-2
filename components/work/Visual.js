@@ -4,14 +4,17 @@ import React from 'react'
 import { useWorkStore } from './store'
 
 const Visual = ({ children, id }) => {
-  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
   return (
     <div
       className={classNames(
-        `fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none visual-${id}`
+        'fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none',
+        `visual-${id}`
       )}
     >
-      <div className="max-w-6xl px-4">{children}</div>
+      <div className="max-w-6xl px-4">
+        {children}
+        {id}
+      </div>
     </div>
   )
 }
@@ -27,6 +30,13 @@ export const SwayVisual = ({ id }) => {
   return (
     <Visual id={id}>
       <img src="/visuals/sway.png" alt="" />
+    </Visual>
+  )
+}
+export const TestVisual = ({ id }) => {
+  return (
+    <Visual id={id}>
+      <img src="/avatar.png" alt="" />
     </Visual>
   )
 }
