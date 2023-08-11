@@ -7,6 +7,7 @@ import Visual from './Visual'
 import { useWorkStore } from './store'
 import { useHidePageOverflow } from './toggle-page-overflow'
 import { useEscapePress } from './use-scape-press'
+import { HiArrowDown } from 'react-icons/hi'
 
 const WorkAlt = () => {
   const [scope, animate] = useAnimate()
@@ -93,8 +94,8 @@ const WorkAlt = () => {
 
   return (
     <div className="mx-auto max-w-6xl px-4">
+      {/* Hero Equivalent */}
       <div>
-        {/* Hero Equivalent */}
         <motion.h2
           variants={fadeIn('down', 0.3)}
           initial="hidden"
@@ -109,14 +110,13 @@ const WorkAlt = () => {
           initial="hidden"
           animate="show"
           exit={'hidden'}
-          className="mb-4 max-w-[400px] mx-auto lg:mx-8"
+          className="max-w-[400px] mx-auto lg:mx-8"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex
-          impedit hic asperiores, autem cumque non delectus ducimus similique
-          laborum, quod architecto praesentium labore est, aliquid repellat
-          minus cum at.
+          Take a look at my completed and ongoing projects by scrolling down.
         </motion.p>
+        <HiArrowDown className="absolute text-6xl top-80 text-accent" />
       </div>
+
       <div ref={scope}>
         {workSlides.map((item) => {
           return <Visual key={item.id} id={item.id} />
@@ -128,7 +128,7 @@ const WorkAlt = () => {
         >
           Back to site
         </button>
-        <div className="flex w-full gap-20 items-start">
+        <div className="flex w-full items-start mt-[-25vh]">
           <div className="w-full py-[50vh]">
             <ul>
               {workSlides.map((item) => {
@@ -142,7 +142,7 @@ const WorkAlt = () => {
           </div>
           <div className="w-full sticky top-0 h-screen flex items-center">
             <div
-              className="w-full aspect-square bg-gray-100 rounded-2xl relative 
+              className="w-full aspect-square  rounded-2xl relative 
             [&:has(>_.active-card)]:bg-transparent"
             >
               {workSlides.map((item) => {
@@ -152,7 +152,6 @@ const WorkAlt = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen">More room to scroll</div>
     </div>
   )
 }

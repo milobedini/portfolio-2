@@ -27,7 +27,7 @@ const WorkCard = ({ gradient, children, id }) => {
         onClick={() => {
           setFullscreenWork(inViewWork)
         }}
-        className="show-me-btn bg-primary text-white rounded-xl absolute bottom-6 left-6 px-4 py-2 shadow-lg"
+        className="show-me-btn bg-primary text-white rounded-xl absolute md:bottom-6 md:left-6  bottom-0 left-0 px-4 py-2 shadow-lg"
       >
         Show me
       </button>
