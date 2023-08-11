@@ -101,7 +101,7 @@ const WorkAlt = () => {
           initial="hidden"
           animate="show"
           exit={'hidden'}
-          className="h2 pt-32"
+          className="h2 pt-40"
         >
           My work <span className="text-accent">.</span>
         </motion.h2>
@@ -114,7 +114,7 @@ const WorkAlt = () => {
         >
           Take a look at my completed and ongoing projects by scrolling down.
         </motion.p>
-        <HiArrowDown className="absolute text-6xl top-80 text-accent" />
+        <HiArrowDown className="absolute text-6xl top-[23rem] text-accent" />
       </div>
 
       <div ref={scope}>

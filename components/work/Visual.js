@@ -12,7 +12,10 @@ const Visual = ({ id }) => {
       )}
     >
       <div className="max-w-6xl px-4">
+        Description
         <VisualImage id={id} />
+        Tech Stack <br />
+        Link to code
       </div>
     </div>
   )
@@ -24,7 +27,7 @@ export const VisualImage = ({ id }) => {
   } else if (id === 2) {
     return <img src="/visuals/sway.png" alt="" />
   } else {
-    return <img src="/avatar.png" alt="" />
+    return <img src="/visuals/giphy.gif" alt="loading" />
   }
 }
 

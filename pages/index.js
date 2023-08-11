@@ -22,8 +22,9 @@ const Home = () => {
             exit={'hidden'}
             className="h1"
           >
-            Transforming Ideas <br /> Into{' '}
-            <span className="text-accent">Digital Reality</span>
+            Crafting code, <br />
+            <span className="text-accent">igniting</span> digital <br />
+            experiences.
           </motion.h1>
           {/* Subtitle */}
           <motion.p
@@ -35,8 +36,7 @@ const Home = () => {
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nemo
             illo quae officia quia recusandae iure, error fugit ducimus beatae
-            laudantium ipsum. Laudantium, itaque? Corrupti, quae ipsam? Minus,
-            sit! Temporibus.
+            laudantium ipsum.
           </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative">

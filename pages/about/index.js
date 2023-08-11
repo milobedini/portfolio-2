@@ -37,19 +37,7 @@ export const aboutData = [
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+
   {
     title: 'experience',
     info: [
@@ -71,16 +59,16 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Software Engineering - General Assembly',
+        stage: '2021',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'MSc Real Estate - Reading',
+        stage: '2019',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'BA Economics - Durham University',
+        stage: '2018',
       },
     ],
   },
@@ -96,34 +84,34 @@ const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-x-hidden">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-x-hidden overflow-y-hidden py">
       <Circles />
       {/* Avatar */}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[290px]"
-      >
-        <Avatar />
-      </motion.div>
+      > */}
+      {/* <Avatar /> */}
+      {/* </motion.div> */}
       <div
-        className="container mx-auto h-full flex flex-col items-center xl:flex-row 
-      gap-x-6"
+        className="container mx-auto h-full flex flex-col  xl:flex-row 
+      gap-x-6 mt-10"
       >
         {/* Text */}
-        <div className="flex-1 flex flex-col justify-center">
-          <motion.h2
+        <div className="flex-1 flex flex-col">
+          {/* <motion.h2
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="h2 mt-4 xl:mt-0"
           >
-            Crafting code, <span className="text-accent">igniting</span> digital
-            experiences.
-          </motion.h2>
+            {/* Crafting code, <span className="text-accent">igniting</span> digital
+            experiences. */}
+          {/* </motion.h2> */}
           <motion.p
             variants={fadeIn('left', 0.2)}
             initial="hidden"
