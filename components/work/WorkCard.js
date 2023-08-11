@@ -11,7 +11,9 @@ const WorkCard = ({ gradient, children, id }) => {
     <div
       className={classNames(
         'h-full w-full rounded-2xl absolute inset-0 transition-opacity',
-        inViewWork === id ? 'active-card opacity-100' : 'opacity-0'
+        inViewWork === id
+          ? 'active-card opacity-100'
+          : 'opacity-0 pointer-events-none'
       )}
     >
       <div
@@ -34,43 +36,66 @@ const WorkCard = ({ gradient, children, id }) => {
 }
 
 export const SwayMobileCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#e838cc] to-[#4a22bd]'} id={id}>
       <img
         src={'/cardImages/swaymob/swaymob_home.PNG'}
         alt="Sway Mobile Home"
-        className="rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
       <img
         src={'/cardImages/swaymob/swaymob_guided.PNG'}
         alt="Sway Mobile Guided"
-        className="rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
       <img
         src={'/cardImages/swaymob/swaymob_profile.PNG'}
         alt="Sway Mobile Profile"
-        className="rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
     </WorkCard>
   )
 }
 export const SwayCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
+
   return (
     <WorkCard gradient={'from-transparent via-[#bed0e0] to-[#c9528a]'} id={id}>
       <img
         src={'/cardImages/swaymob/swaymob_login.PNG'}
         alt="Sway Mobile Home"
-        className="rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
       <img
         src={'/cardImages/swaymob/swaymob_timer.PNG'}
         alt="Sway Mobile Guided"
-        className="rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
       <img
         src={'/cardImages/swaymob/swaymob_onboard.PNG'}
         alt="Sway Mobile Profile"
-        className="rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%]"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
       />
     </WorkCard>
   )

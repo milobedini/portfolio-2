@@ -5,12 +5,15 @@ import { fadeIn } from '../../variants'
 import WorkTitle from './WorkTitle'
 import Visual from './Visual'
 import { useWorkStore } from './store'
+import { useHidePageOverflow } from './toggle-page-overflow'
 
 const WorkAlt = () => {
   const [scope, animate] = useAnimate()
   const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
   const lastFullscreenWork = useWorkStore((state) => state.lastFullscreenWork)
   const setFullscreenWork = useWorkStore((state) => state.setFullscreenWork)
+
+  useHidePageOverflow(!!fullscreenWork)
 
   useEffect(() => {
     if (fullscreenWork) {
