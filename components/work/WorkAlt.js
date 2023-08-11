@@ -6,6 +6,7 @@ import WorkTitle from './WorkTitle'
 import Visual from './Visual'
 import { useWorkStore } from './store'
 import { useHidePageOverflow } from './toggle-page-overflow'
+import { useEscapePress } from './use-scape-press'
 
 const WorkAlt = () => {
   const [scope, animate] = useAnimate()
@@ -13,6 +14,13 @@ const WorkAlt = () => {
   const lastFullscreenWork = useWorkStore((state) => state.lastFullscreenWork)
   const setFullscreenWork = useWorkStore((state) => state.setFullscreenWork)
 
+  const onEscapePress = () => {
+    if (fullscreenWork) {
+      setFullscreenWork(null)
+    }
+  }
+
+  useEscapePress(onEscapePress)
   useHidePageOverflow(!!fullscreenWork)
 
   useEffect(() => {
