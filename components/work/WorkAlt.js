@@ -3,7 +3,7 @@ import { workSlides } from '../WorkSlider'
 import { motion, stagger, useAnimate } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import WorkTitle from './WorkTitle'
-import Visual from './visual'
+import Visual from './Visual'
 import { useWorkStore } from './store'
 
 const WorkAlt = () => {

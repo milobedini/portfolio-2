@@ -16,7 +16,6 @@ import {
   WhiskCard,
   YardCard,
 } from './work/WorkCard'
-import { SwayMobileVisual, SwayVisual, TestVisual } from './work/visual'
 
 // data
 export const workSlides = [
