@@ -3,7 +3,7 @@ import { workSlides } from '../WorkSlider'
 import { motion, stagger, useAnimate } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import WorkTitle from './WorkTitle'
-import { SwayMobileVisual } from './visual'
+import Visual from './visual'
 import { useWorkStore } from './store'
 
 const WorkAlt = () => {
@@ -80,9 +80,6 @@ const WorkAlt = () => {
     }
   }, [fullscreenWork, animate, lastFullscreenWork])
 
-  // Array from 1 to 8
-  const testArray = Array.from({ length: 8 }, (_, i) => i + 1)
-
   return (
     <div className="mx-auto max-w-6xl px-4">
       <div>
@@ -111,7 +108,7 @@ const WorkAlt = () => {
       </div>
       <div ref={scope}>
         {workSlides.map((item) => {
-          return <item.visual id={item.id} key={item.id} />
+          return <Visual key={item.id} id={item.id} />
         })}
         <button
           className="back-to-site-btn bg-black text-white px-4 py-2 rounded-full shadow-lg opacity-0
