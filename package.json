@@ -21,6 +21,7 @@
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
     "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.20.1",
     "zustand": "^4.4.1"
   },
   "devDependencies": {

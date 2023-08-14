@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import ParticlesContainer from '../components/ParticlesContainer'
 import ProjectsBtn from '../components/ProjectsBtn'
 import Avatar from '../components/Avatar'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
+import TypewriterComponent from 'typewriter-effect'
 
 const Home = () => {
   return (
@@ -27,16 +29,33 @@ const Home = () => {
             experiences.
           </motion.h1>
           {/* Subtitle */}
+
+          <TypewriterComponent
+            options={{
+              strings: ['Hello,', 'Hola,', 'Ciao,', 'Bonjour,'],
+              autoStart: true,
+              loop: true,
+              cursor: '',
+            }}
+          />
+
           <motion.p
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn('up', 0.3)}
             initial="hidden"
             animate="show"
             exit={'hidden'}
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            // className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nemo
-            illo quae officia quia recusandae iure, error fugit ducimus beatae
-            laudantium ipsum.
+            I'm Milo Bedini.
+          </motion.p>
+          <motion.p
+            variants={fadeIn('up', 0.3)}
+            initial="hidden"
+            animate="show"
+            exit={'hidden'}
+            // className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+          >
+            I love making things. Get in touch if you also love things.
           </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative">

@@ -2,38 +2,73 @@
 /* eslint-disable react/jsx-key */
 //  data
 import {
+  FaAws,
   FaCss3,
   FaFigma,
+  FaGit,
+  FaGithub,
   FaHtml5,
   FaJs,
+  FaNode,
+  FaNodeJs,
+  FaPython,
   FaReact,
   FaWordpress,
 } from 'react-icons/fa6'
 import {
   SiAdobephotoshop,
   SiAdobexd,
+  SiCypress,
+  SiDjango,
+  SiExpress,
+  SiFirebase,
   SiFramer,
+  SiGraphql,
+  SiJest,
+  SiMongodb,
   SiNextdotjs,
+  SiPostgresql,
+  SiPostman,
+  SiTypescript,
 } from 'react-icons/si'
 export const aboutData = [
   {
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Frontend',
         icons: [
+          <FaReact />,
+          <FaJs />,
+          <SiTypescript />,
+          <SiNextdotjs />,
           <FaHtml5 />,
           <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Backend',
+        icons: [
+          <FaPython />,
+          <FaNode />,
+          <SiGraphql />,
+          <SiExpress />,
+          <SiMongodb />,
+          <SiDjango />,
+          <SiPostgresql />,
+        ],
+      },
+      {
+        title: 'Other',
+        icons: [
+          <FaGithub />,
+          <SiJest />,
+          <SiCypress />,
+          <SiPostman />,
+          <SiFirebase />,
+          <FaAws />,
+        ],
       },
     ],
   },
@@ -42,16 +77,12 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Analyst Consultant - Daemon',
+        stage: '2022 - Present',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Teaching Assistant - General Assembly',
+        stage: '2021 - 2022',
       },
     ],
   },
