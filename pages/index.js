@@ -46,7 +46,7 @@ const Home = () => {
             exit={'hidden'}
             // className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I'm Milo Bedini.
+            I'm Milo.
           </motion.p>
           <motion.p
             variants={fadeIn('up', 0.3)}

@@ -129,7 +129,16 @@ const WorkAlt = () => {
           Back to site
         </button>
         <div className="flex w-full items-start mt-[-25vh]">
-          <div className="w-full py-[50vh]">
+          <motion.div
+            className="w-full py-[50vh]"
+            initial={{
+              opacity: 0,
+              x: 20,
+            }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1, ease: 'linear', duration: 0.5 }}
+            exit={{ opacity: 0, x: 20 }}
+          >
             <ul>
               {workSlides.map((item) => {
                 return (
@@ -139,7 +148,7 @@ const WorkAlt = () => {
                 )
               })}
             </ul>
-          </div>
+          </motion.div>
           <div className="w-full sticky top-0 h-screen flex items-center">
             <div
               className="w-full aspect-square  rounded-2xl relative 

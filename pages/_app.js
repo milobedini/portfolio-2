@@ -8,12 +8,21 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter()
   return (
     <Layout>
-      <AnimatePresence mode="wait">
-        <motion.div key={router.route} className="h-full">
-          <Transition />
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+      {/* <AnimatePresence mode="sync"> */}
+      <motion.div
+        key={router.route}
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        className="h-full"
+      >
+        {/* <Transition /> */}
+        <Component {...pageProps} />
+      </motion.div>
+      {/* </AnimatePresence> */}
     </Layout>
   )
 }
