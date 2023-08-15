@@ -44,6 +44,7 @@ const WorkAlt = () => {
             opacity: 1,
             scale: 1,
             pointerEvents: 'auto',
+            zIndex: 10,
           },
           {
             at: '<',
@@ -76,6 +77,7 @@ const WorkAlt = () => {
             opacity: 0,
             scale: 0.75,
             pointerEvents: 'none',
+            zIndex: 0,
           },
           {
             at: '<',

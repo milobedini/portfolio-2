@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from 'classnames'
 import React from 'react'
-import { useWorkStore } from './store'
 import { FaNode, FaPython, FaReact } from 'react-icons/fa6'
 import {
   SiDjango,
@@ -17,7 +16,7 @@ const Visual = ({ id }) => {
   return (
     <div
       className={classNames(
-        'fixed inset-0 flex flex-col items-center justify-center opacity-0 pointer-events-none overflow-hidden xl:mx-64 md:mx-32 mx-4',
+        'fixed inset-0 flex flex-col items-center justify-center opacity-0 pointer-events-none  xl:mx-64 md:mx-32 mx-4 z-10',
         `visual-${id}`
       )}
     >
@@ -61,6 +60,30 @@ export const VisualDescription = ({ id }) => {
     case 2:
       description =
         'Sway is a full-stack, responsive mindfulness website featuring CRUD operations, utilizing Django (Python) on the backend and React on the frontend. Created 19 unique API endpoints, defined multiple relational database schemas, and implemented custom user authentication, resulting in an engaging user experience.'
+      break
+    case 3:
+      description =
+        "Yard is a full-stack e-commerce website that can process payments. It incorporates a real-time database with cloud functions, and uses React's Context API."
+      break
+    case 4:
+      description =
+        'Whisk is a React Native food delivery app that utilises Expo, Redux and Firebase, as well as Yelp and Google APIs.'
+      break
+    case 5:
+      description =
+        'Tastebook was developed in a team of 3 to build a full-stack MERN app mimicking social media functionality for recipe sharing. My contribution entailed developing features for user interactions, including liking, saving recipes, and generating a custom shopping list, and enhancing the overall user engagement.'
+      break
+    case 6:
+      description =
+        'Club is a full-stack web app that allows social sports teams to manage their teams based on their team role.'
+      break
+    case 7:
+      description =
+        "Feeding Frenzy is a grid-based game harnessing Vanilla JavaScript, HTML, and CSS. My game was voted the cohort's favourite, demonstrating my ability to create enjoyable user experiences."
+      break
+    case 8:
+      description =
+        'My portfolio (this website!) is a Next web application with all the frontend bells and whistles, including Framer Motion.'
       break
     default:
       description =
