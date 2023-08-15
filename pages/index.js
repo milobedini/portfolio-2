@@ -6,6 +6,8 @@ import Avatar from '../components/Avatar'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import TypewriterComponent from 'typewriter-effect'
+import Lottie from 'lottie-react'
+import animationData from '../public/projects.json'
 
 const Home = () => {
   return (
@@ -58,7 +60,7 @@ const Home = () => {
             I love making things. Get in touch if you also love things.
           </motion.p>
           {/* Button */}
-          <div className="flex justify-center xl:hidden relative">
+          {/* <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -69,6 +71,15 @@ const Home = () => {
             exit={'hidden'}
           >
             <ProjectsBtn />
+          </motion.div> */}
+          <motion.div
+            className="xl:flex xl:w-[40%] mt-8 mx-auto xl:mx-0"
+            variants={fadeIn('up', 0.4)}
+            initial="hidden"
+            animate="show"
+            exit={'hidden'}
+          >
+            <Lottie animationData={animationData} />
           </motion.div>
         </div>
       </div>
