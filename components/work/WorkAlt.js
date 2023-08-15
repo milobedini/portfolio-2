@@ -44,6 +44,7 @@ const WorkAlt = () => {
             opacity: 1,
             scale: 1,
             pointerEvents: 'auto',
+            zIndex: 10,
           },
           {
             at: '<',
@@ -76,6 +77,7 @@ const WorkAlt = () => {
             opacity: 0,
             scale: 0.75,
             pointerEvents: 'none',
+            zIndex: 0,
           },
           {
             at: '<',
@@ -123,7 +125,7 @@ const WorkAlt = () => {
         })}
         <button
           className="back-to-site-btn bg-black text-white px-4 py-2 rounded-full shadow-lg opacity-0
-           translate-y-[300%] fixed bottom-32 left-1/2 -translate-x-1/2 z-10"
+           translate-y-[300%] fixed sm:bottom-20 bottom-32 left-1/2 -translate-x-1/2 z-10"
           onClick={() => setFullscreenWork(null)}
         >
           Back to site
