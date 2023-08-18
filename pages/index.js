@@ -73,7 +73,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div> */}
           <motion.div
-            className="xl:flex xl:w-[40%] mt-8 mx-auto xl:mx-0"
+            className="xl:flex xl:w-[40%] mt-8 mx-auto xl:mx-0 md:w-[60%]"
             variants={fadeIn('up', 0.4)}
             initial="hidden"
             animate="show"
