@@ -114,7 +114,8 @@ const WorkAlt = () => {
           exit={'hidden'}
           className="max-w-[400px] mx-auto lg:mx-8"
         >
-          Take a look at my completed and ongoing projects by scrolling down.
+          Take a look at my completed and ongoing personal projects by scrolling
+          down.
         </motion.p>
         <HiArrowDown className="absolute text-6xl top-[23rem] text-accent" />
       </div>

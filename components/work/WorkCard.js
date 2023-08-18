@@ -102,9 +102,34 @@ export const SwayCard = ({ id }) => {
 }
 
 export const YardCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#af2e57] to-[#2b2a60]'} id={id}>
-      <span />
+      <img
+        src={'/cardImages/yard1.webp'}
+        alt="Sway Mobile Home"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/yard2.webp'}
+        alt="Sway Mobile Guided"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/yard3.webp'}
+        alt="Sway Mobile Profile"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
     </WorkCard>
   )
 }
