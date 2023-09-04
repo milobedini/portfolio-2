@@ -135,17 +135,75 @@ export const YardCard = ({ id }) => {
 }
 
 export const WhiskCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#f9ffdc] to-[#8f819f]'} id={id}>
-      <span />
+      <img
+        src={'/cardImages/whisk1.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/whisk1.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/whisk1.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
     </WorkCard>
   )
 }
 
 export const TastebookCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#be3bbd] to-[#b9e8ba]'} id={id}>
-      <span />
+      <img
+        src={'/cardImages/taste1.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[40%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/taste2.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[55%] top-[50%] w-[40%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/taste3.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[48%] top-[15%] w-[50%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/taste4.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[55%] w-[40%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
     </WorkCard>
   )
 }
@@ -157,16 +215,74 @@ export const ClubCard = ({ id }) => {
   )
 }
 export const FeedingFrenzyCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#bc5d67] to-[#d6a3c0]'} id={id}>
-      <span />
+      <img
+        src={'/cardImages/feed1.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[15%] w-[45%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/feed2.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[52%] top-[52%] w-[45%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/feed3.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[52%] top-[17%] w-[45%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/feed4.webp'}
+        alt="loading"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[55%] w-[45%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
     </WorkCard>
   )
 }
 export const PortfolioCard = ({ id }) => {
+  const fullscreenWork = useWorkStore((state) => state.fullscreenWork)
+  const isFullscreen = fullscreenWork === id
   return (
     <WorkCard gradient={'from-transparent via-[#6e391d] to-[#30ffc9]'} id={id}>
-      <span />
+      <img
+        src={'/cardImages/port1.webp'}
+        alt="Sway Mobile Home"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[5%] top-[5%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/port2.webp'}
+        alt="Sway Mobile Guided"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[70%] top-[35%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
+      <img
+        src={'/cardImages/port3.webp'}
+        alt="Sway Mobile Profile"
+        className={classNames(
+          'rounded-xl shadow-lg absolute left-[38%] top-[20%] w-[28%] transition-transform',
+          isFullscreen ? 'scale-0' : 'scale-100'
+        )}
+      />
     </WorkCard>
   )
 }

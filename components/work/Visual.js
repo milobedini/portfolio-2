@@ -2,12 +2,27 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from 'classnames'
 import React from 'react'
-import { FaNode, FaPython, FaReact } from 'react-icons/fa6'
+import {
+  FaCss3,
+  FaGoogle,
+  FaHtml5,
+  FaJs,
+  FaNode,
+  FaPython,
+  FaReact,
+  FaSass,
+  FaYelp,
+} from 'react-icons/fa6'
 import {
   SiDjango,
   SiExpo,
   SiExpress,
   SiFirebase,
+  SiFramer,
+  SiMongodb,
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
 import Link from 'next/link'
@@ -109,9 +124,51 @@ export const VisualTech = ({ id }) => {
     case 2:
       icons = [
         <FaReact key={id} />,
-        <SiTypescript key={id} />,
         <FaPython key={id} />,
         <SiDjango key={id} />,
+      ]
+      break
+    case 3:
+      icons = [
+        <FaReact key={id} />,
+        <SiExpress key={id} />,
+        <FaNode key={id} />,
+        <SiFirebase key={id} />,
+      ]
+      break
+    case 4:
+      icons = [
+        <FaReact key={id} />,
+        <SiRedux key={id} />,
+        <SiFirebase key={id} />,
+        <FaYelp key={id} />,
+        <FaGoogle key={id} />,
+      ]
+      break
+    case 5:
+      icons = [
+        <FaReact key={id} />,
+        <SiExpress key={id} />,
+        <FaNode key={id} />,
+        <SiMongodb key={id} />,
+      ]
+      break
+    case 6:
+      icons = [
+        <FaReact key={id} />,
+        <SiDjango key={id} />,
+        <SiRedux key={id} />,
+        <FaSass key={id} />,
+      ]
+      break
+    case 7:
+      icons = [<FaJs key={id} />, <FaHtml5 key={id} />, <FaCss3 key={id} />]
+      break
+    case 8:
+      icons = [
+        <SiNextdotjs key={id} />,
+        <SiTailwindcss key={id} />,
+        <SiFramer key={id} />,
       ]
       break
     default:
