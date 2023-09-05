@@ -52,10 +52,25 @@ export const VisualImage = ({ id }) => {
 
   switch (id) {
     case 1:
-      src = '/visuals/swaymob.png'
+      src = '/visuals/swaymob.gif'
       break
     case 2:
-      src = '/visuals/sway.png'
+      src = '/visuals/sway.webp'
+      break
+    case 3:
+      src = '/visuals/yard.webp'
+      break
+    case 4:
+      src = '/visuals/whisk.webp'
+      break
+    case 5:
+      src = '/visuals/taste.webp'
+      break
+    case 7:
+      src = '/visuals/feed.webp'
+      break
+    case 8:
+      src = '/visuals/portfolio.webp'
       break
     default:
       src = '/visuals/giphy.gif'
