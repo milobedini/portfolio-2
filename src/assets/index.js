@@ -23,6 +23,9 @@ import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
 
+import ay from './company/ay.png'
+import daemon from './company/daemon.png'
+import ga from './company/ga.png'
 import meta from './company/meta.png'
 import shopify from './company/shopify.png'
 import starbucks from './company/starbucks.png'
@@ -63,4 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  ay,
+  daemon,
+  ga,
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { jb, menu, close } from '../assets'
@@ -14,27 +15,49 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to={'/'}
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 "
           onClick={() => {
             setActive('')
             window.scrollTo(0, 0)
           }}
         >
           <img src={jb} alt="logo" className="w-full h-9 object-contain" />
+          {/* <div className="flex items-center gap-3 ml-8 sm:ml-0 sm:justify-center">
+            <FaLinkedin className="text-white h-6 w-6" />
+            <FaGithub className="text-white h-6 w-6" />
+          </div> */}
         </Link>
+        <div className="flex md:mr-auto ml-[15vw] md:ml-8 ">
+          <a
+            href="https://www.linkedin.com/in/milo-bedini/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin className="text-white h-6 w-6 mr-2 hover:text-accent" />
+          </a>
+          <a
+            href="https://github.com/milobedini"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub className="text-white h-6 w-6 hover:text-accent" />
+          </a>
+        </div>
+
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
-                active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? 'text-accent' : 'text-secondary'
+              } hover:text-accent text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
+
         {/* Mobile Nav Bar */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -54,7 +77,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? 'text-white' : 'text-secondary'
+                    active === link.title ? 'text-accent' : 'text-secondary'
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle)

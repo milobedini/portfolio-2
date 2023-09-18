@@ -5,6 +5,7 @@ import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
+
   // Google 3D models if you want to change. Sketchfab, explore, downloadable.
   return (
     <mesh>

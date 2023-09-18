@@ -22,13 +22,13 @@ const FeedbackCard = ({
         <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
         <div className="mt-7 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[16px]">
-              <span className="blue-text-gradient">@</span>
-              {name}
+            <p className="text-secondary font-medium text-[18px]">
+              <span className="blue-text-gradient ">@ </span>
+              {/* {name} */}
+              {designation} from {company}
             </p>
-            <p className="mt-1 text-secondary text-[12px]">
-              {designation} at {company}
-            </p>
+            {/* <p className="mt-1 text-secondary text-[12px]">
+            </p> */}
           </div>
         </div>
       </div>

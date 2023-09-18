@@ -75,7 +75,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(0.7)}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
@@ -98,4 +98,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, 'works')
+export default SectionWrapper(Works, 'projects')
