@@ -182,7 +182,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+      'Milo has been great on the [X] project!  I really appreciated how he was comfortable recommending replacing certain react native components we were using. I felt I could let him get on with it, and he would come back with any issues. This is just what was needed for this stage of the project.',
     name: 'Dave Arkell',
     designation: 'Principal Consultant',
     company: 'Dae.mn',
