@@ -1,50 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,jsx}'],
+  mode: 'jit',
   theme: {
-    container: {
-      padding: {
-        DEFAULT: '15px',
-      },
-    },
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '960px',
-      xl: '1200px',
-    },
     extend: {
       colors: {
-        primary: '#131424',
-        secondary: '#393A47',
-        accent: '#F13024',
+        primary: '#050816',
+        secondary: '#aaa6c3',
+        tertiary: '#151030',
+        'black-100': '#100d25',
+        'black-200': '#090325',
+        'white-100': '#f3f3f3',
+      },
+      boxShadow: {
+        card: '0px 35px 120px -15px #211e35',
+      },
+      screens: {
+        xs: '450px',
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
-      },
-      animation: {
-        'spin-slow': 'spin 6s linear infinite',
-      },
-      fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
+        'hero-pattern': "url('/src/assets/herobg.png')",
       },
     },
   },
-  container: {
-    padding: {
-      DEFAULT: '15px',
-    },
-  },
-  plugins: [require('tailwind-scrollbar')],
-};
+  plugins: [],
+}
