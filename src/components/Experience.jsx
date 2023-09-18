@@ -10,6 +10,7 @@ import { styles } from '../styles'
 import { experiences } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
+import { useEffect, useState } from 'react'
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -59,12 +60,34 @@ const ExperienceCard = ({ experience }) => {
 }
 
 const Experience = () => {
+  const [isBigScreen, setIsBigScreen] = useState(window.innerWidth >= 768)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsBigScreen(window.innerWidth >= 768)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      {isBigScreen ? (
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </motion.div>
+      ) : (
+        <div>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </div>
+      )}
+
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((exp, index) => (
