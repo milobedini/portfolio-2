@@ -27,6 +27,7 @@ import {
   daemon,
   ga,
   ay,
+  daemon2,
 } from '../assets'
 
 export const navLinks = [
@@ -130,8 +131,8 @@ const experiences = [
   {
     title: 'Software Engineering Consultant',
     company_name: 'Dae.mn',
-    icon: daemon,
-    iconBg: '#783e56',
+    icon: daemon2,
+    iconBg: '#383E56',
     date: 'Oct 2022 - Present',
     points: [
       'As one of two app developers in the team, I played a pivotal role in delivering a meal planning app. The app was developed using React Native (TypeScript), with Cypress for end-to-end and integration testing, and GraphQL. My focus was on perfecting the UI and user flow. The app is currently in the TestFlight phase, preparing for a full launch.',
@@ -142,9 +143,9 @@ const experiences = [
   {
     title: 'Teaching Assistant',
     company_name: 'General Assembly',
-    icon: daemon,
+    icon: daemon2,
 
-    iconBg: '#383E56',
+    iconBg: '#E6DEDD',
     date: 'Jan 2022 - May 2022',
     points: [
       'Delivering daily homework feedback to students, and assisting them one-on-one or as a group throughout the course during projects and "labs".',

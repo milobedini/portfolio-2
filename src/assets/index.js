@@ -25,6 +25,7 @@ import threejs from './tech/threejs.svg'
 
 import ay from './company/ay.png'
 import daemon from './company/daemon.png'
+import daemon2 from './company/daemon2.png'
 import ga from './company/ga.png'
 import meta from './company/meta.png'
 import shopify from './company/shopify.png'
@@ -69,4 +70,5 @@ export {
   ay,
   daemon,
   ga,
+  daemon2,
 }
