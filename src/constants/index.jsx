@@ -1,4 +1,35 @@
 import {
+  FaAws,
+  FaCss3,
+  FaFigma,
+  FaGit,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaNode,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+  FaWordpress,
+} from 'react-icons/fa6'
+import {
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiCypress,
+  SiDjango,
+  SiExpress,
+  SiFirebase,
+  SiFramer,
+  SiGraphql,
+  SiJest,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPostman,
+  SiTypescript,
+} from 'react-icons/si'
+
+import {
   mobile,
   backend,
   creator,
@@ -14,20 +45,28 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
-  jobit,
-  tripguide,
   threejs,
   python,
-  daemon,
   ga,
   ay,
   daemon2,
+  sway,
+  yard,
+  whisk,
+  taste,
+  feed,
+  portfolio,
+  crunch,
+  aws,
+  cypress,
+  django,
+  firebase,
+  graph,
+  jest,
+  next,
+  postgresql,
+  postman,
 } from '../assets'
 
 export const navLinks = [
@@ -68,63 +107,114 @@ const services = [
   },
 ]
 
+// const technologies = [
+//   {
+//     name: 'HTML 5',
+//     icon: html,
+//   },
+//   {
+//     name: 'Python',
+//     icon: python,
+//   },
+//   {
+//     name: 'CSS 3',
+//     icon: css,
+//   },
+//   {
+//     name: 'JavaScript',
+//     icon: javascript,
+//   },
+//   {
+//     name: 'TypeScript',
+//     icon: typescript,
+//   },
+//   {
+//     name: 'React JS',
+//     icon: reactjs,
+//   },
+//   {
+//     name: 'Redux Toolkit',
+//     icon: redux,
+//   },
+//   {
+//     name: 'Tailwind CSS',
+//     icon: tailwind,
+//   },
+//   {
+//     name: 'Node JS',
+//     icon: nodejs,
+//   },
+//   {
+//     name: 'MongoDB',
+//     icon: mongodb,
+//   },
+//   {
+//     name: 'Three JS',
+//     icon: threejs,
+//   },
+//   {
+//     name: 'git',
+//     icon: git,
+//   },
+//   {
+//     name: 'aws',
+//     icon: aws,
+//   },
+//   {
+//     name: 'cypress',
+//     icon: cypress,
+//   },
+//   {
+//     name: 'django',
+//     icon: django,
+//   },
+//   {
+//     name: 'firebase',
+//     icon: firebase,
+//   },
+//   {
+//     name: 'graphql',
+//     icon: graph,
+//   },
+//   {
+//     name: 'jest',
+//     icon: jest,
+//   },
+//   {
+//     name: 'next',
+//     icon: next,
+//   },
+//   {
+//     name: 'postgresql',
+//     icon: postgresql,
+//   },
+//   {
+//     name: 'postman',
+//     icon: postman,
+//   },
+// ]
+
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'Python',
-    icon: python,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  <FaReact key="react" />,
+  <FaJs key="js" />,
+  <SiTypescript key="typescript" />,
+  <SiNextdotjs key="next" />,
+  <FaHtml5 key="html" />,
+  <FaCss3 key="css" />,
+  <SiFramer key="framer" />,
+  <FaPython key="python" />,
+  <FaNode key="node" />,
+  <SiGraphql key="graphql" />,
+  <SiExpress key="express" />,
+  <SiMongodb key="mongodb" />,
+  <SiDjango key="django" />,
+  <SiPostgresql key="postgresql" />,
+  <FaGithub key="github" />,
+  <SiJest key="jest" />,
+  <SiCypress key="cypress" />,
+  <SiPostman key="postman" />,
+  <SiFirebase key="firebase" />,
+  <FaAws key="aws" />,
 ]
 
 const experiences = [
@@ -234,8 +324,8 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: sway,
+    source_code_link: 'https://github.com/milobedini/sway-app',
   },
   {
     name: 'Sway',
@@ -255,8 +345,8 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: sway,
+    source_code_link: 'https://github.com/milobedini/Sway',
   },
   {
     name: 'Yard',
@@ -280,8 +370,8 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: yard,
+    source_code_link: 'https://github.com/milobedini/Yard',
   },
   {
     name: 'Whisk',
@@ -309,8 +399,8 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: whisk,
+    source_code_link: 'https://github.com/milobedini/Whisk',
   },
   {
     name: 'TasteBook',
@@ -334,8 +424,8 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: taste,
+    source_code_link: 'https://github.com/milobedini/TasteBook',
   },
   {
     name: 'Club',
@@ -360,7 +450,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/milobedini/club-frontend',
   },
 
   {
@@ -377,8 +467,8 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: crunch,
+    source_code_link: 'https://github.com/milobedini/Crunch',
   },
   {
     name: 'Feeding Frenzy',
@@ -398,13 +488,13 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: feed,
+    source_code_link: 'https://github.com/milobedini/Feeding-Frenzy',
   },
   {
     name: 'Portfolio',
     description:
-      'My portfolio (this website!) is a Next web application with all the frontend bells and whistles, including Framer Motion.',
+      'My portfolio (this website!) is a Next web application with all the frontend bells and whistles, including 3D.js and Framer Motion.',
     tags: [
       {
         name: 'next',
@@ -423,8 +513,8 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: portfolio,
+    // source_code_link: 'https://github.com/',
   },
 ]
 

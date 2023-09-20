@@ -22,6 +22,15 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
+import aws from './tech/aws.png'
+import cypress from './tech/cypress.png'
+import django from './tech/django.png'
+import firebase from './tech/firebase.png'
+import graph from './tech/graph.png'
+import jest from './tech/jest.png'
+import next from './tech/next.png'
+import postgresql from './tech/postgresql.png'
+import postman from './tech/postman.png'
 
 import ay from './company/ay.png'
 import daemon from './company/daemon.png'
@@ -35,6 +44,14 @@ import tesla from './company/tesla.png'
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
+
+import crunch from './projects/crunch.webp'
+import feed from './projects/feed.webp'
+import portfolio from './projects/portfolio.png'
+import sway from './projects/sway.webp'
+import taste from './projects/taste.webp'
+import whisk from './projects/whisk.webp'
+import yard from './projects/yard.webp'
 
 export {
   logo,
@@ -71,4 +88,20 @@ export {
   daemon,
   ga,
   daemon2,
+  crunch,
+  feed,
+  portfolio,
+  sway,
+  taste,
+  whisk,
+  yard,
+  aws,
+  cypress,
+  django,
+  firebase,
+  graph,
+  jest,
+  next,
+  postgresql,
+  postman,
 }
