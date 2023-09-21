@@ -8,6 +8,7 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { useEffect, useState } from 'react'
+import { BsCircleFill } from 'react-icons/bs'
 
 const ProjectCard = ({
   index,
@@ -16,6 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
   isBigScreen,
 }) => {
   return (
@@ -37,7 +39,9 @@ const ProjectCard = ({
                 className="w-full h-full object-cover rounded-2xl"
               />
               {source_code_link && (
-                <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                <div
+                  className={`absolute inset-0 flex justify-between m-3 card-img_hover`}
+                >
                   <div
                     onClick={() => window.open(source_code_link, '_blank')}
                     className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -48,17 +52,14 @@ const ProjectCard = ({
                       className="w-1/2 h-1/2 object-contain"
                     />
                   </div>
-                  {/* LIVE LINK BELOW
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github} 
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div> */}
+                  {live_link && (
+                    <div
+                      className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      onClick={() => window.open(live_link, '_blank')}
+                    >
+                      <BsCircleFill className="w-1/2 h-1/2 object-contain text-accent pulse" />
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -91,10 +92,10 @@ const ProjectCard = ({
                 alt={name}
                 className="w-full h-full object-cover rounded-2xl"
               />
-              <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <div className="absolute inset-0 flex justify-between m-3 card-img_hover">
                 <div
                   onClick={() => window.open(source_code_link, '_blank')}
-                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer "
                 >
                   <img
                     src={github}
@@ -102,17 +103,14 @@ const ProjectCard = ({
                     className="w-1/2 h-1/2 object-contain"
                   />
                 </div>
-                {/* LIVE LINK BELOW
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github} 
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div> */}
+                {live_link && (
+                  <div
+                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    onClick={() => window.open(live_link, '_blank')}
+                  >
+                    <BsCircleFill className="w-1/2 h-1/2 object-contain text-accent pulse" />
+                  </div>
+                )}
               </div>
             </div>
             <div className="mt-5">

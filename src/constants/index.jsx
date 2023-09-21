@@ -67,6 +67,7 @@ import {
   next,
   postgresql,
   postman,
+  peacock,
 } from '../assets'
 
 export const navLinks = [
@@ -301,7 +302,7 @@ const projects = [
   {
     name: 'Sway Mobile',
     description:
-      'Sway Mobile is a comprehensive full-stack React Native mindfulness mobile app with advanced UI and animations.',
+      'Sway Mobile is a comprehensive full-stack React Native mindfulness mobile app with advanced UI and animations. Contact me if you wish to preview Sway, as it sits within its own Expo organisation. See GitHub for a video walkthrough.',
     tags: [
       {
         name: 'react',
@@ -326,6 +327,33 @@ const projects = [
     ],
     image: sway,
     source_code_link: 'https://github.com/milobedini/sway-app',
+    // live_link: 'exp://exp.host/@milobedini/Sway',
+  },
+  {
+    name: 'Peacock',
+    description:
+      'Peacock is a full-stack photo sharing web app using React and Sanity. Users can log in with Google, post and save photos, as well as commenting on other posts.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'sanity',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'google-auth',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: peacock,
+    source_code_link: 'https://github.com/milobedini/peacock-v2',
+    live_link: 'https://peacock-mb.netlify.app/',
   },
   {
     name: 'Sway',
@@ -372,6 +400,7 @@ const projects = [
     ],
     image: yard,
     source_code_link: 'https://github.com/milobedini/Yard',
+    live_link: 'https://yard-60efd.web.app/',
   },
   {
     name: 'Whisk',
@@ -427,31 +456,6 @@ const projects = [
     image: taste,
     source_code_link: 'https://github.com/milobedini/TasteBook',
   },
-  {
-    name: 'Club',
-    description:
-      'Club is a full-stack web app that allows social sports teams to manage their teams based on their team role.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'django',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'redux',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'sass',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: carrent,
-    source_code_link: 'https://github.com/milobedini/club-frontend',
-  },
 
   {
     name: 'Crunch',
@@ -469,6 +473,7 @@ const projects = [
     ],
     image: crunch,
     source_code_link: 'https://github.com/milobedini/Crunch',
+    live_link: 'https://crunch-demo.netlify.app/',
   },
   {
     name: 'Feeding Frenzy',
@@ -490,6 +495,7 @@ const projects = [
     ],
     image: feed,
     source_code_link: 'https://github.com/milobedini/Feeding-Frenzy',
+    live_link: 'https://milobedini.github.io/Feeding-Frenzy/',
   },
   {
     name: 'Portfolio',

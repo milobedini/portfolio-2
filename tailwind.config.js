@@ -24,5 +24,25 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '@keyframes pulse': {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(1.25)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+          },
+        },
+        '.pulse': {
+          animation: 'pulse 2s infinite',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    },
+  ],
 }

@@ -47,6 +47,7 @@ import tripguide from './tripguide.png'
 
 import crunch from './projects/crunch.webp'
 import feed from './projects/feed.webp'
+import peacock from './projects/peacock.webp'
 import portfolio from './projects/portfolio.png'
 import sway from './projects/sway.webp'
 import taste from './projects/taste.webp'
@@ -95,6 +96,7 @@ export {
   taste,
   whisk,
   yard,
+  peacock,
   aws,
   cypress,
   django,
