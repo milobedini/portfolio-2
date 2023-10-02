@@ -53,6 +53,7 @@ import sway from './projects/sway.webp'
 import taste from './projects/taste.webp'
 import whisk from './projects/whisk.webp'
 import yard from './projects/yard.webp'
+import ushirt from './projects/ushirt.webp'
 
 export {
   logo,
@@ -97,6 +98,7 @@ export {
   whisk,
   yard,
   peacock,
+  ushirt,
   aws,
   cypress,
   django,

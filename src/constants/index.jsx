@@ -39,6 +39,7 @@ import {
   portfolio,
   crunch,
   peacock,
+  ushirt,
 } from '../assets'
 
 export const navLinks = [
@@ -374,33 +375,34 @@ const projects = [
     live_link: 'https://yard-60efd.web.app/',
   },
   {
-    name: 'Whisk',
+    name: 'UShirt',
     description:
-      'Whisk is a React Native food delivery app that utilises Expo, Redux and Firebase, as well as Yelp and Google APIs.',
+      'UShirt allows users to preview and create a downloadable 3D model of a t-shirt design, using a colour picker, an image uploader, and an AI prompt. UShirt automatically removes any AI image backgrounds for the user. Built using React, Three.js, Framer, Tailwind, Valtio and DALLE.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'redux',
+        name: 'three.js',
         color: 'green-text-gradient',
       },
       {
-        name: 'firebase',
+        name: 'framer',
         color: 'pink-text-gradient',
       },
       {
-        name: 'yelp',
+        name: 'tailwind',
         color: 'blue-text-gradient',
       },
       {
-        name: 'google',
+        name: 'dalle',
         color: 'green-text-gradient',
       },
     ],
-    image: whisk,
-    source_code_link: 'https://github.com/milobedini/Whisk',
+    image: ushirt,
+    source_code_link: 'https://github.com/milobedini/ushirt',
+    live_link: 'https://ushirt.netlify.app/',
   },
   {
     name: 'TasteBook',

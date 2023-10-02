@@ -36,7 +36,9 @@ const ProjectCard = ({
               <img
                 src={image}
                 alt={name}
-                className="w-full h-full object-cover rounded-2xl"
+                className={`w-full h-full rounded-2xl ${
+                  name === 'UShirt' ? 'object-center' : 'object-cover'
+                }`}
               />
               {source_code_link && (
                 <div
