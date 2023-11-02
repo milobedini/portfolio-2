@@ -302,6 +302,36 @@ const projects = [
     // live_link: 'exp://exp.host/@milobedini/Sway',
   },
   {
+    name: 'UShirt',
+    description:
+      'UShirt allows users to preview and create a downloadable 3D model of a t-shirt design, using a colour picker, an image uploader, and an AI prompt. UShirt automatically removes any AI image backgrounds for the user. Built using React, Three.js, Framer, Tailwind, Valtio and DALLE.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'three.js',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'framer',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'dalle',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: ushirt,
+    source_code_link: 'https://github.com/milobedini/ushirt',
+    live_link: 'https://ushirt.netlify.app/',
+  },
+  {
     name: 'Peacock',
     description:
       'Peacock is a full-stack photo sharing web app using React and Sanity. Users can log in with Google, post and save photos, as well as commenting on other posts.',
@@ -374,36 +404,7 @@ const projects = [
     source_code_link: 'https://github.com/milobedini/Yard',
     live_link: 'https://yard-60efd.web.app/',
   },
-  {
-    name: 'UShirt',
-    description:
-      'UShirt allows users to preview and create a downloadable 3D model of a t-shirt design, using a colour picker, an image uploader, and an AI prompt. UShirt automatically removes any AI image backgrounds for the user. Built using React, Three.js, Framer, Tailwind, Valtio and DALLE.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'three.js',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'framer',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'dalle',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: ushirt,
-    source_code_link: 'https://github.com/milobedini/ushirt',
-    live_link: 'https://ushirt.netlify.app/',
-  },
+
   {
     name: 'TasteBook',
     description:
