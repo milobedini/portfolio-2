@@ -196,7 +196,7 @@ const experiences = [
     company_name: 'Dae.mn',
     icon: daemon2,
     iconBg: '#383E56',
-    date: 'Oct 2022 - Present',
+    date: 'Oct 2022 - Jan 2024',
     points: [
       'As one of two app developers in the team, I played a pivotal role in delivering a meal planning app. The app was developed using React Native (TypeScript), with Cypress for end-to-end and integration testing, and GraphQL. My focus was on perfecting the UI and user flow. The app is currently in the TestFlight phase, preparing for a full launch.',
       'Currently working on an engagement with a retail client belonging to the top 5 global brands. This project employs a similar tech stack to the aforementioned project, begun in May 2023, and is a longer-term ongoing project.',
