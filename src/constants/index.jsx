@@ -29,11 +29,10 @@ import {
   creator,
   web,
   ga,
-  ay,
   daemon2,
   sway,
   yard,
-  whisk,
+  fr,
   taste,
   feed,
   portfolio,
@@ -168,10 +167,10 @@ const services = [
 // ]
 
 const technologies = [
+  <SiNextdotjs key="next" />,
+  <SiTypescript key="typescript" />,
   <FaReact key="react" />,
   <FaJs key="js" />,
-  <SiTypescript key="typescript" />,
-  <SiNextdotjs key="next" />,
   <FaHtml5 key="html" />,
   <FaCss3 key="css" />,
   <SiFramer key="framer" />,
@@ -192,22 +191,35 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Software Engineer',
+    company_name: 'FINE+RARE',
+    icon: fr,
+    iconBg: '#E6DEDD',
+    date: 'April 2024 - Ongoing',
+    points: [
+      'Played a key role in Fine+Rare’s transformation from a traditional analogue merchant into a technology-led global fine wine platform, driving digital sales from 5% to 15% and contributing to international expansion (US, Italy, Hong Kong).',
+      'Contributed to a 4-person frontend team that successfully launched the Portfolio platform and integrated Vinfolio for the US, along with site rollouts for Italy and Hong Kong, improving engagement across multiple markets.',
+      'Developed and optimised UI components, customer flows, and brand content presentation using TypeScript, Next.js, Contentful, Material UI, Tailwind, Redux, and Storybook.',
+      'Collaborated with design and content teams to implement scalable CMS (Contentful) models, HubSpot email templates, and multi-language experiences.',
+      'Delivered consistently against demanding sprint timelines, contributing to 27% YoY growth in site traffic and the successful scaling of Fine+Rare into a multi-entity, international platform.',
+    ],
+  },
+  {
     title: 'Software Engineering Consultant',
     company_name: 'Dae.mn',
     icon: daemon2,
     iconBg: '#383E56',
     date: 'Oct 2022 - Jan 2024',
     points: [
-      'As one of two app developers in the team, I played a pivotal role in delivering a meal planning app. The app was developed using React Native (TypeScript), with Cypress for end-to-end and integration testing, and GraphQL. My focus was on perfecting the UI and user flow. The app is currently in the TestFlight phase, preparing for a full launch.',
-      'Currently working on an engagement with a retail client belonging to the top 5 global brands. This project employs a similar tech stack to the aforementioned project, begun in May 2023, and is a longer-term ongoing project.',
-      'Contributed to the optimisation of developing internal standards for tech stacks, including created a Kafka enrichment service, available in both .NET and Python.',
+      'Developed React Native and React applications for high-profile retail and consumer clients, focusing on UI, user flow, and performance.',
+      'Developed key features and components from scratch for a meal-planning app using React Native and TypeScript, while also enhancing retail engagement strategies for a global brand.',
+      'Built a Kafka enrichment service using .NET and Python, which established standardised data processing workflows, facilitating data integration across all 4 engineering teams.',
     ],
   },
   {
     title: 'Teaching Assistant',
     company_name: 'General Assembly',
     icon: daemon2,
-
     iconBg: '#E6DEDD',
     date: 'Jan 2022 - May 2022',
     points: [
@@ -228,17 +240,6 @@ const experiences = [
       'Project 3: Collaborated in a team of 3 to build a full-stack MERN app mimicking social media functionality for recipe sharing. My contribution entailed developing features for user interactions, including liking, saving recipes, and generating a custom shopping list, and enhancing the overall user engagement.',
       'Project 2: A 48-hour hackathon to create a numbers-based web app employing React and Sass, integrating four external APIs.',
       "Project 1: Engineered a grid-based game harnessing Vanilla JavaScript, HTML, and CSS. My game was voted the cohort's favourite, demonstrating my ability to create enjoyable user experiences.",
-    ],
-  },
-  {
-    title: 'Graduate Surveyor',
-    company_name: 'Avison Young',
-    icon: ay,
-    iconBg: '#E6DEDD',
-    date: 'Sep 2019 - Aug 2021',
-    points: [
-      'Completed a rigorous 2-year commercial real estate graduate program.',
-      'Honed my analytical skills, ability to communicate ideas and adaptability - key attributes in a fast-paced tech environment.',
     ],
   },
 ]
